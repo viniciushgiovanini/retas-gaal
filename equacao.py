@@ -1,7 +1,7 @@
 # imports
 import math
 import numpy as np
-from sympy import symbols, Eq, solve
+import sympy as sp
 
 
 class equacao_reta():
@@ -21,11 +21,10 @@ class equacao_reta():
     
   def equacao_vetorial_reta(self, vetor, ponto):
     
-    x,y,z,t = symbols('x y z t')
+    t = sp.Symbol('t')
     
-    equacao_vetorial =  Eq((x,y,z), ponto +  t * vetor)
-    # array = np.array(eval(equacao_vetorial))
-    print(equacao_vetorial)
+    equacao_vetorial = sp.Matrix(ponto) + t * sp.Matrix(vetor)
+    
     return equacao_vetorial
   
   def equacao_parametrica_reta(self, vetor, ponto):
@@ -47,6 +46,8 @@ ponto = [1,2,-1]
 
 obj = equacao_reta()
 a = obj.equacao_vetorial_reta(vetor, ponto)
-print(a)
+
+for each in a:
+  print(each)
 
 
