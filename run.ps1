@@ -1,1 +1,3 @@
-python base/equacao.py
+python base/retas.py
+
+python base/planos.py

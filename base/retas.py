@@ -11,8 +11,10 @@ class Retas():
     self.vetor_r2 = vetor_r2
   
   def equacao_vetorial(self):
-    # TODO: fix, fazer
-    return None
+    equacao_vetorial = f'{self.ponto_r1} + t * {self.vetor_r1}'
+    equacao_vetorial2 = f'{self.ponto_r2} + t * {self.vetor_r2}'
+    
+    return equacao_vetorial, equacao_vetorial2
 
   def equacao_parametrica(self):
     h, t = sp.symbols('h t')
@@ -100,7 +102,8 @@ vetor_r2 = [3, -2, 1]
 
 retas = Retas(ponto_r1, ponto_r2, vetor_r1, vetor_r2)
 
-print('equação vetorial:\n', retas.equacao_vetorial(), '\n')
+vet_a, vet_b = retas.equacao_vetorial()
+print('equação vetorial:\n', vet_a, '\n', vet_b, '\n')
 
 a, b = retas.equacao_parametrica()
 print('equação paramétrica:\n', a, '\n', b, '\n')
