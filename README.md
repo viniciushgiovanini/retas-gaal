@@ -11,8 +11,8 @@ Grupo:
 
 ### Código:
 Para acessar os códigos:
-- Código comentado para a parte de retas: clique aqui
-- Código comentado para a parte de planos: clique aqui
+- Código comentado para a parte de retas: [clique aqui](https://github.com/viniciushgiovanini/retas-gaal/blob/master/src/retas.py)
+- Código comentado para a parte de planos: [clique aqui](https://github.com/viniciushgiovanini/retas-gaal/blob/master/src/planos.py)
 
 ### Link de download do executável:
 [Clique AQUI para fazer o download](https://github.com/viniciushgiovanini/retas-gaal/releases/download/Interface/interface.exe)
