@@ -89,20 +89,3 @@ class Planos():
     Função usada para fazer o modulo de um vetor (v).
     '''
         return math.sqrt(v[0]**2 + v[1]**2 + v[2]**2)
-
-# ponto = [4, 7, 9]
-# vetor_normal = [1, 6, -5]
-# ponto_u = [10, 3, -3]
-# vetor_u = [14, 5, 2]
-
-# planos = Planos(ponto, vetor_normal, ponto_u, vetor_u)
-
-# eq, d = planos.equacao_plano()
-
-# print('equação plano:\n', eq)
-
-# print('interseção plano:\n', planos.intersecao_reta(d))
-
-# print('calcula ângulo plano reta:\n', planos.calcula_angulo_plano_reta())
-
-# print('alfa:\n', planos.alfa())
